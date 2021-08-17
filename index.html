@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Not Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      max-height: 100vh;
+      max-width: 100vw;
+      font-family: Space Mono, serif;
+    }
+    #not-found-text{
+      width: 100%;
+      font-size: 1.1rem;
+      padding: 15px 0 0 15px;
+    }
+    .container{
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 100px auto;
+    }
+    .left-col, .right-col{
+      width: 50%;
+    }
+    #display-img{
+      width: 90%;
+    }
+    #title{
+      font-weight: 700;
+      font-size: 3rem;
+    }
+    #description{
+      width: 70%;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    #back-btn{
+      background-color: #333;
+      color: #fff;
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 15px 25px;
+    }
+    #copyright{
+      font-size: .9rem;
+      color: #bbb;
+      text-align: center;
+      margin-top: -10px;
+    }
+    #username-copyright{
+      font-weight: 700;
+      color: #bbbbbb;
+    }
+
+    @media screen and (max-width: 576px){
+      /* body{
+        min-height: 170vh;
+      } */
+      #not-found-text{
+        font-size: 1.1rem;
+        padding: 15px 0 0 20px;
+      }
+      .container{
+        width: 90%;
+        flex-direction: column;
+        margin: 50px auto;
+      }
+      .left-col, .right-col{
+        width: 100%;
+      }
+      #display-img{
+        width: 100%;
+      }
+      #title{
+        font-size: 3.7rem;
+      }
+      #description{
+        width: 80%;
+      }
+      #back-btn{
+        font-size: .9rem;
+        padding: 25px 40px;
+        font-weight: 700;
+      }
+      #copyright{
+        margin-top: 0;
+        padding: 20px 0;
+      }
+    }
+
+    @media screen and (max-width: 350px){
+      #title{
+        font-size: 2.6rem;
+      }
+      #description{
+        width: 90%;
+        font-size: 1rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <p id="not-found-text">404 NOT FOUND</p>
+  <div class="container">
+    <div class="left-col">
+      <img src="img/Scarecrow.png" alt="" id="display-img">
+    </div>
+    <div class="right-col">
+      <h1 id="title">I have bad news for you</h1>
+      <p id="description">The page you are looking for might be removed or is temporarily unavailable</p>
+      <a href="#" id="back-btn">BACK TO HOMEPAGE</a>
+    </div>
+  </div>
+  <p id="copyright">created by <a href="" id="username-copyright">candrahaikal</a> - devChallenges.io</p>
+  
+</body>
+</html>
